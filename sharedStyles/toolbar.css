@@ -1,0 +1,6 @@
+#toolbar{
+ height: 100%;
+ /* border: 1px solid green;   */
+ padding: 36px; 
+ background-color: var(--secondary-color);
+}

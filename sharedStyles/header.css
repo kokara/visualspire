@@ -1,0 +1,32 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: var(--grey-color);
+    border-bottom: 1px solid var(--grey-darker-color);
+
+    height: 64px;
+    padding: 0px 36px;
+}
+
+.header a{
+    text-decoration: none;
+    background-color: var(--primary-text-color);
+    color: var(--white);
+    padding:8px 8px;
+    font-family:var(--logo-font-family);
+    font-weight: 550;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.header h1{
+  margin: auto;
+  
+  font-family: var(--heading-font-family);
+  color: var(--primary-text-color);
+  font-size: 21px;
+  font-weight: 700;
+   /* border: 1px solid red; */
+}
