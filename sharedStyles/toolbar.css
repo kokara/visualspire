@@ -1,6 +1,83 @@
 #toolbar{
  height: 100%;
  /* border: 1px solid green;   */
- padding: 36px; 
+ /* padding: 36px;  */
  background-color: var(--secondary-color);
+ min-width: max-content;
+
+}
+.section-heading{
+    background-color: var(--primary-color);
+    padding: 12px 36px;
+    
+}
+.section-heading h1{
+    color: var(--white);
+    font-family: var(--heading-font-family);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.toolbar-section-contents{
+    padding: 16px 36px;
+    /* border: 1px solid red; */
+}
+
+/* TOOLS STYLING */
+.tool{
+    margin-bottom: 12px;
+    /* border: 1px solid blue; */
+}
+.tool:last-child{
+    margin-bottom: 0px;
+}
+
+.tool h1{
+    color: var(--white);
+    font-family: var(--heading-font-family);
+    font-size: 15px;
+    
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+/* container of input and go button */
+.tool .input-go{
+    
+    display: flex;
+
+}
+
+/* the input */
+.tool .input-go input{
+    outline: none;
+    border-radius: 4px;
+    /* height: 32px; */
+   border: none;
+   margin-right: 8px;
+   padding: 8px;
+   width: 128px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+/* go button that contains svg */
+.tool .input-go button{
+    border: none;
+    outline: none;
+    background-color: var(--tertiary-color);
+    
+    height: 32px;
+    width: 36px;
+    border-radius:4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    /* fill: white; */
+}
+
+/* arrow svg */
+.tool .input-go button svg{
+    fill: var(--white);
+
 }
