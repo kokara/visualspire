@@ -13,9 +13,9 @@
       --grey-darker-color:#C8C9CB;
       --white:white;
 
-      --logo-font-family:"rosa sans";
+      --logo-font-family:"outfit";
       --heading-font-family:"montserrat";
-      --default-font-family:"montserrat";
+      --default-font-family:"outfit";
       
   }
 
@@ -28,9 +28,20 @@
       color: var(--primary-text-color);
    
       font-family: var(--default-font-family);
+      font-size: 14px;
       font-weight: bold;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
       border-radius: 2px;
       cursor: pointer;
+  }
+  .button:hover{
+      background-color: var(--white);
+  }
+
+  .no-copy {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */      
   }
 

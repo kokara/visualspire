@@ -1,0 +1,81 @@
+.floating-toolbar{
+    /* border:1px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: min-content;
+    position: fixed;
+    bottom: 56px;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    padding: 10px 16px;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+
+}
+
+.floating-toolbar button{
+    background-color: transparent;
+    border:none;
+    
+    border-radius: 50%;
+    padding: 3px;
+cursor: pointer;
+
+    
+
+}
+.floating-toolbar button:hover{
+    background-color: var(--primary-color);
+    
+}
+
+.floating-toolbar button svg{
+    fill: var(--white);
+    display: block;
+
+}
+
+.floating-toolbar .floating-tools-divider{
+    width: 1px;
+    height: 30px;
+    background-color: var(--grey-darker-color);
+    /* border: 1px solid red; */
+    margin: 0px 8px;
+
+}
+
+.floating-toolbar .speed-controller-box{
+  
+}
+.floating-toolbar .speed-controller-box label{
+    font-family: var(--default-font-family);
+    color: white;
+    font-weight: 600;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 110px;
+    height: 5px;
+    background: var(--white);
+    outline: none;
+    border-radius: 100px;
+    /* opacity: 0.7; */
+    /* -webkit-transition: 0.2s; */
+    /* transition: opacity 0.2s; */
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* appearance: none; */
+    /* width: 25px; */
+    width: 16px;
+    height: 16px;
+    border-radius: 100px;
+    /* height: 25px; */
+    background: var(--primary-color);
+    cursor: pointer;
+  }
+  

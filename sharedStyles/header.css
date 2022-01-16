@@ -10,17 +10,19 @@
     padding: 0px 36px;
 }
 
+/* logo */
 .header a{
     text-decoration: none;
     background-color: var(--primary-text-color);
     color: var(--white);
     padding:8px 8px;
     font-family:var(--logo-font-family);
-    font-weight: 550;
+    font-weight: 500;
     font-size: 18px;
     border-radius: 2px;
 }
 
+/* page title */
 .header h1{
   margin: auto;
   
