@@ -1,0 +1,36 @@
+/* button splash effect */
+.splash-effect {
+    position: relative;
+    overflow: hidden;
+  }
+  .ripple {
+    position: absolute;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+  }
+  .ripple.hide {
+    display: none;
+  }
+  
+  .home-page-search-box-search-icon-container span.ripple {
+    border-radius: 50%;
+    /* display: none; */
+  }
+  
+  @keyframes animate {
+    0% {
+      width: 0px;
+      height: 0px;
+      opacity: 0.5;
+    }
+  
+    100% {
+      width: 500px;
+      height: 500px;
+      opacity: 0;
+    }
+  }
+  

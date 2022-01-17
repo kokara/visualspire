@@ -1,13 +1,15 @@
 .header{
     display: flex;
-    flex-direction: row;
+   
     align-items: center;
-
+    /* width: 100%; */
     background-color: var(--grey-color);
     border-bottom: 1px solid var(--grey-darker-color);
 
     height: 64px;
     padding: 0px 36px;
+    /* position: fixed; */
+    /* width: 100%; */
 }
 
 /* logo */

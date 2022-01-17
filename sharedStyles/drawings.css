@@ -1,0 +1,26 @@
+.drawings{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    /* border:1px solid red; */
+    margin: 36px;
+  
+}
+.drawings div{
+    /* display: inline-block; */
+    /* border:1px solid blue; */
+}
+
+.node{
+    border: 2px solid var(--primary-text-color);
+    padding: 8px 16px;
+    border-radius: 8px;
+
+}
+.node p{
+    font-family: var(--default-font-family);
+}
+.arrow{
+    /* border:1px solid red; */
+}

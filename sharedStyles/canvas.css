@@ -1,6 +1,10 @@
-#canvas{
+.canvas{
     height: 100%;
     width: 100%;
     /* border: 2px solid blue; */
     position: relative;
+  
+  
+    overflow-x: scroll;
+   
 }
