@@ -54,7 +54,7 @@
                         <h1 class="no-copy">At Beginning</h1>
 
                         <div class="input-go">
-                            <input type="text" id="input-at-beginning">
+                            <input type="number" id="input-at-beginning">
 
                             <button class="splash-effect" id="go-at-beginning">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
@@ -72,9 +72,9 @@
                         <h1 class="no-copy">At End</h1>
 
                         <div class="input-go">
-                            <input type="text">
+                            <input type="number" id="input-at-end">
 
-                            <button class="splash-effect">
+                            <button class="splash-effect" id="go-at-end">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                     class="bi bi-arrow-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -90,9 +90,15 @@
                         <h1 class="no-copy">At Position</h1>
 
                         <div class="input-go">
-                            <input type="text">
+                            <div class="inputs-wrapper">
+                                <!-- take data -->
+                                <input type="number" id="input-at-position-data-value" placeholder="Value">
+                                <!-- take position -->
+                                <input type="number" id="input-at-position" placeholder="Position">
+                            </div>
 
-                            <button class="splash-effect">
+
+                            <button class="splash-effect" id="go-at-position">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                     class="bi bi-arrow-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -171,33 +177,8 @@
         <!-- canvas section -->
         <section class="canvas">
 
-            <section class="drawings">
-                <div class="node">
-                    <p>1000000002</p>
-                </div>
-                <div class="arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="42.361" height="15.553" viewBox="0 0 42.361 15.553">
-                        <path id="arrow-right"
-                            d="M-23.561,11.276a.864.864,0,0,1,.864-.864H15.849L10.411,4.976a.865.865,0,1,1,1.223-1.223l6.912,6.912a.864.864,0,0,1,0,1.223L11.634,18.8a.865.865,0,1,1-1.223-1.223l5.438-5.436H-22.7A.864.864,0,0,1-23.561,11.276Z"
-                            transform="translate(23.561 -3.499)" fill="#2f3640" fill-rule="evenodd" />
-                    </svg>
+            <section class="drawings" id="drawings">
 
-
-                </div>
-                <div class="node">
-                    <p>3</p>
-                </div>
-                <div class="arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="42.361" height="15.553" viewBox="0 0 42.361 15.553">
-                        <path id="arrow-right"
-                            d="M-23.561,11.276a.864.864,0,0,1,.864-.864H15.849L10.411,4.976a.865.865,0,1,1,1.223-1.223l6.912,6.912a.864.864,0,0,1,0,1.223L11.634,18.8a.865.865,0,1,1-1.223-1.223l5.438-5.436H-22.7A.864.864,0,0,1-23.561,11.276Z"
-                            transform="translate(23.561 -3.499)" fill="#2f3640" fill-rule="evenodd" />
-                    </svg>
-
-                </div>
-                <div class="node">
-                    <p>7</p>
-                </div>
 
             </section>
 
@@ -241,6 +222,8 @@
     </main>
     <script src="../sharedScript/effects.js"></script>
     <script src="./listeners.js"></script>
+    <script src="./linkedListScript.js"></script>
+    <script src="./creater.js"></script>
 </body>
 
 </html>

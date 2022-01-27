@@ -44,6 +44,8 @@
 .tool .input-go{
     
     display: flex;
+    /* border: 1px solid red; */
+
 
 }
 
@@ -57,6 +59,8 @@
    padding: 8px;
    width: 128px;
    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+   font-family: var(--default-font-family);
+      font-size: 14px;
 }
 
 /* go button that contains svg */
@@ -64,7 +68,7 @@
     border: none;
     outline: none;
     background-color: var(--tertiary-color);
-    
+    align-self: center;
     height: 32px;
     width: 36px;
     border-radius:4px;
@@ -80,4 +84,15 @@
 .tool .input-go button svg{
     fill: var(--white);
 
+}
+
+/* for position  */
+.tool .input-go .inputs-wrapper{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.tool .input-go .inputs-wrapper input:first-child{
+    margin-bottom: 4px;
 }
