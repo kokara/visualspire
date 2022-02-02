@@ -83,13 +83,14 @@ class LL {
          1) Initialize counter to 1;
          2) If we want to insert node at position, say, 5, then we have to stop our iteration at position 4 i.e. pos-1;
        */
-        let counter = 1;
+        let counter = 1, countArrow = 1;
         while (counter < pos - 1 && tempNode.next !== null) {
 
             tempNode = tempNode.next;
 
             counter++;
         }
+        countArrow = counter - 1;
         //3) create a new node with that data and set it's next property to currentNode's next property and then set currentNode's next property to this new node.
         const newNode = new Node(data);
         newNode.next = tempNode.next;
@@ -97,7 +98,10 @@ class LL {
 
         // displaying node on screen
         let fig = newNode.renderNode();
-        this.drawing.insertBefore(fig, this.drawing.childNodes[counter + 1]);
+        let arr = newNode.renderArrow();
+        this.drawing.insertBefore(fig, this.drawing.childNodes[countArrow + counter + 1]);
+        this.drawing.insertBefore(arr, this.drawing.children[countArrow + counter]);
+
 
 
 
